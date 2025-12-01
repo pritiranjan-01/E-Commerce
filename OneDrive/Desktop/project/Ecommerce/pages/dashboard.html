@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <script defer src="../js/dashboard.js"></script>
+    <!-- <script src="./promise.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+  <body>
+    <aside>
+      <div id="heading">
+        <h3>Shopify</h3>
+      </div>
+      <div id="list">
+        <ul>
+          <li id="dash" name="Dashboard">
+            <a id="dashboard" class="selected" href="#">
+              <i class="fa-solid fa-house"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li id="us" name="Users"> 
+            <a id="user" href="#">
+              <i class="fa-solid fa-users"></i>
+              <span>Users</span>
+            </a>
+          </li>
+          <li id="sh"  name="Shopping">
+            <a id="shopping" href="#">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span>Shopping</span>
+            </a>
+          </li>
+          <li id="se" name="Settings">
+            <a id="settings" href="#">
+              <i class="fa-solid fa-gears"></i>
+              <span id="se">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="collapse-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+    </aside>
+    <section id="right-main">
+      <div id="header">
+        <h1 id="welcome-msg">Welcome to Dashboard</h1>
+        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+        <div id="countContainer">
+          <p id="countCartIteam">0</p>
+        </div>
+        <input id="search-box" type="text" placeholder="Search here" />
+        <img id="profile-picture" alt="profile-image">
+      </div>
+      <div id="cards-container">
+      </div>
+    </section>
+    <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  </body>
+</html>

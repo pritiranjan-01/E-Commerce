@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders</title>
+    <style>
+      body {
+        background: #f5f6fa;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+      }
+      .orders-header {
+        text-align: center;
+        color: #228acf;
+        margin-top: 30px;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+      }
+      #orders-container {
+        max-width: 900px;
+        margin: 30px auto 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+      .order-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        padding: 24px 18px 18px 18px;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: box-shadow 0.2s;
+      }
+      .order-card:hover {
+        box-shadow: 0 6px 18px rgba(34, 138, 207, 0.15);
+      }
+      .order-card img {
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        background: #f0f0f0;
+      }
+      .order-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #333;
+        text-align: center;
+      }
+      .order-amount {
+        color: #228acf;
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+      }
+      .order-date {
+        color: #888;
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+      }
+      .order-paymentid {
+        color: #444;
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+        word-break: break-all;
+      }
+      .order-status {
+        font-size: 0.9rem;
+        color: #e67e22;
+        margin-top: 10px;
+      }
+      button {
+        text-decoration: none;
+        position: relative;
+        bottom: 5px;
+        left: 45%;
+        background-color: #228acf;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: #1a6f9f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="orders-header">My Orders</div>
+    <div id="orders-container"></div>
+    <div id="button"><button id="homepage" onclick="window.location.href='./dashboard.html'">Go to Homepage</button></div>
+    <script src="../js/myorders.js"></script>
+  </body>
+</html>

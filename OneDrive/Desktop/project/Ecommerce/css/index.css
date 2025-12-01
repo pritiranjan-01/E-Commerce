@@ -1,0 +1,333 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: rgb(134, 129, 129);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 72px;
+  width: 100%;
+  /* background-color: red; */
+  box-shadow: 0px 0px 10px -5px rgb(79, 66, 66);
+  background: #eeaeca;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+#left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  /* background-color: rgb(27, 147, 252); */
+}
+#left > h1 {
+  font-size: 30px;
+  font-family: cursive;
+  font-weight: 800;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  /* background-color: blueviolet; */
+}
+#listiteam {
+  height: 100%;
+  width: 70%;
+  /* background-color: aquamarine; */
+}
+
+#listiteam > ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  font-family: cursive;
+}
+#listiteam > ul > li {
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: rgba(128, 128, 128, 0.474);
+}
+#listiteam > ul > li:hover {
+  background: rgb(128, 128, 128);
+}
+#button {
+  width: 30%;
+  height: 100%;
+  /* background-color: chocolate; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#button > button {
+  height: 40px;
+  width: 100px;
+  font-family: cursive;
+}
+
+#button > button {
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+#button > button:hover {
+  background-color: bisque;
+}
+main {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+.loginform,
+.registerform {
+  height: auto;
+  min-width: 35%;
+  background-color: rgb(255, 255, 255);
+  top: 10%;
+  right: 35%;
+  left: 35%;
+  display: none;
+  position: absolute; 
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 2px rgba(37, 73, 164, 0.167);
+  z-index: 1000;
+}
+#form-header {
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.5;
+}
+#form-header > p {
+  font-size: 0.6em;
+}
+.close-btn {
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  /* background-color: #b721ff; */
+
+}
+.fa-circle-xmark {
+  font-size: 35px;
+  color: rgba(255, 0, 0, 0.422);
+}
+.fa-circle-xmark:hover {
+  color: rgb(255, 0, 0);
+}
+#section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua;   */
+}
+form {
+  height: 90%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: green; */
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-group-a {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  /* background-color: #eeaeca; */
+  gap: 10px;
+}
+.form-group-a > .form-elements-a,
+.form-group-b > .form-elements-b {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+}
+.form-group-b {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(94, 208, 208); */
+  gap: 10px;
+}
+.form-elements-a > input,
+.form-elements-a > button,
+.form-elements-b > input {
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: 2px solid rgb(15, 8, 221);
+  font-size: 15px;
+}
+.form-elements-a > input {
+  width: 132px;
+}
+
+.form-elements-b > input {
+  width: 100%;
+}
+.form-elements-a > #sendOTP {
+  margin-top: 10px;
+  width: 100px;
+  margin-right: 10px;
+}
+.form-elements-a > #sendOTP:hover {
+  background-color: rgba(128, 128, 128, 0.515);
+}
+.form-elements-a > #sendOTP:active {
+  outline: 3px solid rgb(25, 223, 25);
+}
+.form-elements-a > #otp {
+  width: 153px;
+}
+.register-btn {
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #21d5fd25;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+#register-login {
+  text-align: center;
+  line-height: 2;
+  font-weight: 400;
+}
+#register-login > p {
+  margin-top: 10px;
+}
+#register-login > p > .login-page,
+.register-page {
+  border: none;
+  outline: none;
+  width: auto;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+#register-login > p > .login-page:hover,
+.register-page:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#website-name {
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+#website-name > h1 {
+  margin-top: 15%;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-family: sans-serif;
+  max-width: 900px;
+  word-wrap: break-word;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color:rgba(128, 128, 128, 0.311);
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.bar{
+  display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 20px;
+  }
+
+  .right {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(118, 108, 108);
+    position: absolute;
+    top: 100%; /* Places below navbar */
+    left: 0;
+    z-index: 10;
+    gap: 15px;
+    padding: 15px 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .right.show-nav {
+    display: flex;
+  }
+
+  #listiteam {
+    width: 100%;
+  }
+
+  #listiteam > ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #listiteam > ul > li {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+
+  #button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #button > button {
+    width: 90%;
+  }
+}

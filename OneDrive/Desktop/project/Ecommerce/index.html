@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Authorization</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="./js/index.js"></script>
+    <script defer src="./jsscopes.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="left">
+        <h1>EasyAuth</h1>
+      </div>
+      <div class="bar">
+          <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="right">
+        <div id="listiteam">
+          <ul id="ul"></ul>
+        </div>
+        <div id="button">
+          <button id="login-btn">Login</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="website-name">
+        <h1>Powerful Authentication, Minimal Hassle Welcome to EasyAuth Web</h1>
+      </section>
+      <div id="overlay">
+      <!-- Login form -->
+      <div class="loginform">
+        <section id="section">
+          <form>
+            <section id="form-header">
+              <h1>Welcome Back</h1>
+              <p>Log into Your Account</p>
+            </section>
+            <section class="form-group-b">
+              <div class="form-elements-b">
+                <label for="email1">Enter Email</label>
+                <input id="email1" type="email" placeholder="Enter your Email" required />
+              </div>
+              <div class="form-elements-b">
+                <label for="login-password1">Enter Password</label>
+                <input id="login-password1" type="text" placeholder="Enter your password" required />
+              </div>
+              <div class="form-elements-a">
+                <button id="sendOTP" type="button">Send OTP</button>
+                <input id="otp" type="number" placeholder="Enter your OTP" required />
+              </div>
+              <div id="register-login">
+                <button class="register-btn login" type="submit">Login</button>
+                <p>Don't have an Account ? <button type="button" class="register-page">Create Here</button></p>
+              </div>
+            </section>
+          </form>
+        </section>
+        <div>
+          <button class="close-btn">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Registration -->
+
+      <div class="registerform">
+        <section id="section">
+          <form>
+            <section id="form-header">
+              <h1>Create Your Account</h1>
+              <p>Join thousands of organized users</p>
+            </section>
+            <section class="form-group-a">
+              <div class="form-elements-a">
+                <label for="fname">First Name</label>
+                <input id="fname" type="text" placeholder="Enter First Name" required />
+              </div>
+              <div class="form-elements-a">
+                <label for="lname">Last Name</label>
+                <input id="lname" type="text" placeholder="Enter Last Name" required />
+              </div>
+            </section>
+            <section class="form-group-b">
+              <div class="form-elements-b">
+                <label for="email">Enter Email</label>
+                <input id="email" type="email" placeholder="Enter your Email" required />
+              </div>
+              <div class="form-elements-b">
+                <label for="password">Create Password</label>
+                <input id="password" type="text" placeholder="Create your password" />
+              </div>
+              <div class="form-elements-b">
+                <label for="cpassword">Confirm Password</label>
+                <input id="cpassword" type="password" placeholder="Confirm Password" />
+              </div>
+              <div id="register-login">
+                <button id="register" class="register-btn" type="submit">Create Account</button>
+                <p>Already have an Account ? <button type="button" class="login-page">Login here</button></p>
+              </div>
+            </section>
+          </form>
+        </section>
+        <div>
+          <button class="close-btn">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>

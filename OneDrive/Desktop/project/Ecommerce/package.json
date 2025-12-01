@@ -1,0 +1,12 @@
+{
+  "name": "ecommerce-webapp",
+  "version": "0.1.0",
+  "description": "A small frontend ecommerce demo web app",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 8000",
+    "serve": "npx serve . -p 8000"
+  },
+  "author": "",
+  "license": "MIT"
+}

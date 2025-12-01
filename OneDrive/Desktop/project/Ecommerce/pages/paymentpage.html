@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <script defer src="../js/payment.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <style>
+      body {
+        background: #000000;
+        font-family: Arial, sans-serif;
+      }
+      .payment-container {
+        max-width: 400px;
+        margin: 60px auto;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px 30px 40px 30px;
+        text-align: center;
+      }
+      .amount {
+        font-size: 2.2rem;
+        color: #228acf;
+        margin: 20px 0 30px 0;
+        font-weight: bold;
+      }
+      .pay-btn {
+        background: #e67e22;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 14px 0;
+        width: 100%;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background 0.2s;
+      }
+      .pay-btn:hover {
+        background: #a75b18;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="payment-container">
+      <h2>Payment Details</h2>
+      <div class="amount" id="amount-display">₹0</div>
+      <button class="pay-btn" id="pay-btn">Pay Now</button>
+    </div>
+  </body>
+</html>
